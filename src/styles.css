@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #0f2bff;
+  --second-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--second-color); 
+  padding: 0;
+}
+
+@font-face {
+  font-family: "archivo-black";
+  src: url("fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: bold;
+}
+
+section {
+  position: fixed;
+  height: 50vmin;
+  aspect-ratio: 1/1;
+  background: var(--primary-color);
+  color: var(--second-color);
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  }
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;        
+  margin: 0;
+  font-family: "archivo-black", system-ui, sans-serif;
+  font-size: clamp(1rem, 12vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+h1 span {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  animation-name: letters-falling;
+  animation-duration: 3.5s;
+  animation-timing-function: linear(0, 0.01 0.5%, 0.049 1.1%, 0.112 1.7%, 0.196 2.3%, 0.41 3.5%, 1 6.4%, 1.243 7.9%, 1.337 8.7%, 1.398 9.4%, 1.436 10.1%, 1.454 10.8%, 1.454 11.4%, 1.44 12%, 1.371 13.3%, 1.275 14.5%, 0.998 17.5%, 0.882 19.1%, 0.818 20.5%, 0.793 21.9%, 0.8 23.1%, 0.832 24.4%, 0.998 28.5%, 1.052 30.1%, 1.082 31.5%, 1.094 32.9%, 1.082 35.1%, 0.983 40.7%, 0.965 42.3%, 0.957 43.9%, 0.962 46.1%, 1.008 51.8%, 1.019 54.9%, 0.991 65.9%, 1.004 76.7%, 1);
+  /* source: https://easingwizard.com/ */
+  animation-fill-mode: forwards;
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 0s;
+  --impact-rotation: 20deg;
+}
+h1 span:nth-child(2) {
+  animation-delay: 0.3s;
+  --impact-rotation: 70deg;
+}
+h1 span:nth-child(3) {
+  animation-delay: 0.6s;
+  --impact-rotation: 35deg;
+}
+h1 span:nth-child(4) {
+  animation-delay: 0.9s;
+  --impact-rotation: 20deg;
+}
+h1 span:nth-child(5) {
+  animation-delay: 1.2s;
+  --impact-rotation: 30deg;
+}
+
+@keyframes letters-falling {
+  0% {transform: translateY(-300%) rotate(0deg);opacity: 1;  }
+  60% {transform: translateY(0%) rotate(var(--impact-rotation, 25deg));}
+  75% {transform: translateY(0%) rotate(calc(var(--impact-rotation, 25deg) * 0.4));}
+  85% {transform: translateY(0%) rotate(0deg);}
+  92% { transform: translateY(0%) rotate(calc(var(--impact-rotation, 25deg)* -0.2));}
+  100% {transform: translateY(0%) rotate(0deg);opacity: 1; }
+}
+
+
+
+
+
