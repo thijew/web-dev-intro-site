@@ -23,3 +23,17 @@ Mostly I refreshed the basics; because I haven’t coded for a while, I had to l
 
 #### What am I going to do tomorrow?
 Tomorrow I want to clearly write down my learning goals and focus on animations, responsiveness, and GSAP.
+
+### 5 feb
+
+#### What did I do today?
+Today I worked on finishing my learning goals, finished my box in the bottom right corner with my name and some animations.
+
+#### How much time did it take?
+I started the day with struggling with my idea but thanks to the help of vasillas I got onto the right track. After that I worked on finishing my animations and I am quite happy with them. I ended the day with starting on my carousel with imgs.
+
+#### What did I learn?
+Animations are harder than I thought, so I learned quite a lot from that. 
+
+#### What am I going to do tomorrow?
+Tomorrow I am going to work on the img scroll animation and the different theme I want to add.

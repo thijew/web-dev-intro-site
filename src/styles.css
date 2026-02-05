@@ -20,7 +20,7 @@ body {
   font-style: bold;
 }
 
-section {
+section:first-of-type {
   position: fixed;
   height: 50vmin;
   aspect-ratio: 1/1;
@@ -83,6 +83,26 @@ h1 span:nth-child(5) {
   85% {transform: translateY(0%) rotate(0deg);}
   92% { transform: translateY(0%) rotate(calc(var(--impact-rotation, 25deg)* -0.2));}
   100% {transform: translateY(0%) rotate(0deg);opacity: 1; }
+}
+
+
+section:nth-last-of-type {
+  position: absolute;
+  height: 50vmin;
+  aspect-ratio: 1/1;
+  background: var(--primary-color);
+  color: var(--second-color);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+    position: absolute;
+  top: 0;
+  left: 0;        
+
 }
 
 
