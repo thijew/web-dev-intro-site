@@ -37,3 +37,18 @@ Animations are harder than I thought, so I learned quite a lot from that.
 
 #### What am I going to do tomorrow?
 Tomorrow I am going to work on the img scroll animation and the different theme I want to add.
+
+### 9/10 feb
+
+#### What did I do today?
+Today I added the images for the scrollable block with art in it. Added the scroll animation and blur while scrolling and placed the object at the right place. I also made a planning for the coming days and what to do to finish the project. 
+
+#### How much time did it take?
+I missed half of both days that's why I added them together. So planing and finding a new way to add the api and show data about my classmates, took about half a day. The art slider also took like 4 hours to add 
+
+#### What did I learn?
+I learned about scrolling animations, aspect-ratio and typography
+
+#### What am I going to do tomorrow?
+Tomorrow I am going to finish my planning and make sure my website is decent enough to hand in. If there is more time I'll add more details.
+
