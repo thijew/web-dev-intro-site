@@ -86,20 +86,20 @@ h1 span:nth-child(5) {
 }
 
 
-section:nth-last-of-type {
-  position: absolute;
+section:nth-last-of-type(1) {
+  margin: 0;
+  position: fixed;
   height: 50vmin;
   aspect-ratio: 1/1;
-  background: var(--primary-color);
-  color: var(--second-color);
   overflow: hidden;
   left: 0;
   top: 0;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  width: 50vw;
   aspect-ratio: 1;
   overflow-y: auto;
   overflow-x: hidden;
