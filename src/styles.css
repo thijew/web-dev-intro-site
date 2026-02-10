@@ -99,13 +99,27 @@ section:nth-last-of-type {
 
 ul {
   list-style-type: none;
-    position: absolute;
-  top: 0;
-  left: 0;        
-
+  width: 50vw;
+  aspect-ratio: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ul li {
+  animation-name: scrolly;
+  animation-timeline: view();
+}
+@keyframes scrolly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
+ul img {
+  width: 100%;;
+}
 
 
 
